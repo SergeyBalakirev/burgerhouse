@@ -14,9 +14,10 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <div class="header__inner">
-        <div class="header__top">
+
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
           <a class="header__logo" href="#">
             <img src="images/logo.png" alt="логотип">
           </a>
@@ -53,25 +54,91 @@
             </ul>
           </nav>
         </div>
+      </div>
+    </div>
 
-        <div class="header__banner">
-          <div class="header__banner-text">
-            <div class="header__banner-subtitle">
-              самые вкусные бургеры у нас
-            </div>
-            <div class="header__banner-title">
-              burger
-              <span class="header__banner-title--small">house</span>
-            </div>
+    <div class="header__banner">
+      <div class="container">
+        <div class="header__banner-inner">
+          <div class="header__banner-subtitle wow animate__animated animate__fadeInDownBig">
+            самые вкусные бургеры у нас
+          </div>
+          <div class="header__banner-title wow animate__animated animate__rotateInDownLeft">
+            burger
+            <span class="header__banner-title--small">house</span>
           </div>
 
+          <div class="header__banner-img wow animate__animated animate__fadeInRightBig"></div>
         </div>
       </div>
     </div>
-    <div class="header__banner-img">
 
-    </div>
+
   </header>
+
+  <main>
+    <section class="stock">
+      <div class="container">
+        <div class="stock__inner">
+          <div class="stock__main wow animate__animated animate__fadeInLeftBig">
+            <div class="stock__item stock__item--first" style="background-image: url(images/stock1.jpg);">
+              <div class="stock__item-text">
+                <div class="stock__subtitle">
+                  бесплатная доставка
+                </div>
+                <div class="stock__title">
+                  при заказе “royal”
+                </div>
+
+                <p class="stock__hover-txt1">
+                  При заказе нашего фирменного бургера “ROYAL” мы гарантируем бесплатную доставку.
+                </p>
+                <p class="stock__hover-txt2">
+                  * Диапазон доставки 3 км. За пределами диапазона акция не действительна
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stock__secondary wow animate__animated animate__fadeInRightBig">
+            <div class="stock__item stock__item--second" style="background-image: url(images/stock2.jpg);">
+              <div class="stock__item-text">
+                <div class="stock__subtitle">
+                  каждую среду
+                </div>
+                <div class="stock__title">
+                  Больше вкуса
+                  <span class="stock__subtitle">
+                    Два по цене одного
+                  </span>
+                </div>
+
+                <p class="stock__hover-txt2">
+                  Закажите два любых одинаковых бургера по цене одного
+                </p>
+              </div>
+            </div>
+
+            <div class="stock__item stock__item--third" style="background-image: url(images/stock3.jpg);">
+              <div class="stock__item-text">
+                <div class="stock__subtitle">
+                  Горячее предложение
+                </div>
+                <div class="stock__title">
+                  -10% на самовывоз
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
 
 
 
