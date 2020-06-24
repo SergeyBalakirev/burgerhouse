@@ -1,5 +1,16 @@
 $(function () {
 
+
+  $('.menu__slider-inner').slick({
+    infinite: true,
+    speed: 1000,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    dots: true,
+  });
+
+
   var wow = new WOW(
     {
       boxClass: 'wow',
