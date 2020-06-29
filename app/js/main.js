@@ -6,7 +6,13 @@ $(function () {
     speed: 1000,
     arrows: false,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 3,
+    dots: true,
+  });
+
+  $('.new__slider-inner').slick({
+    infinite: true,
+    arrows: false,
     dots: true,
   });
 
