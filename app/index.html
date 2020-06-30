@@ -13,7 +13,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
 
     <div class="header__top">
       <div class="container">
@@ -27,32 +27,32 @@
             </a>
             <ul class="header__list">
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#header">
                   главная
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#stock">
                   акции
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#menu">
                   меню
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#new">
                   новинки
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#delivery">
                   заказать доставку
                 </a>
               </li>
               <li class="header__item">
-                <a class="header__link" href="#">
+                <a class="header__link" href="#footer">
                   контакты
                 </a>
               </li>
@@ -82,7 +82,7 @@
   </header>
 
   <main>
-    <section class="stock">
+    <section class="stock" id="stock">
       <div class="container">
         <div class="stock__inner">
           <div class="stock__main wow animate__animated animate__fadeInLeftBig">
@@ -140,7 +140,7 @@
       </div>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <div class="menu__inner">
           <div class="menu__title">
@@ -246,7 +246,7 @@
     </section>
 
 
-    <section class="new">
+    <section class="new" id="new">
       <div class="container">
         <div class="new__inner">
 
@@ -319,7 +319,7 @@
       </div>
     </section>
 
-    <section class="delivery">
+    <section class="delivery" id="delivery">
       <div class="container">
         <div class="delivery__inner">
           <div class="delivery__title">
@@ -327,29 +327,105 @@
           </div>
           <form class="delivery__form">
             <div class="delivery__form-box">
-              <input class="delivery__name delivery__ttl" type="text" placeholder="имя">
-              <input class="delivery__phone delivery__ttl" type="tel" placeholder="телефон">
-              <input class="delivery__adress delivery__ttl" type="text" placeholder="адрес доставки">
+              <input class="delivery__name delivery__item" type="text" placeholder="имя">
+              <input class="delivery__phone delivery__item" type="tel" placeholder="телефон">
+              <input class="delivery__adress delivery__item" type="text" placeholder="адрес доставки">
             </div>
             <div class="delivery__form-box">
-              <textarea class="delivery__order delivery__ttl" placeholder="ваш заказ и время"></textarea>
-              <button class="delivery__btn delivery__ttl" type="submit">отправить заявку</button>
+              <textarea class="delivery__order delivery__item" placeholder="ваш заказ и время"></textarea>
+              <button class="delivery__btn delivery__item" type="submit">отправить заявку</button>
             </div>
           </form>
+          <div class="delivery__bg-img delivery__bg-img--bottle"></div>
         </div>
       </div>
+      <div class="delivery__bg-img delivery__bg-img--burger"></div>
+      <div class="delivery__bg-img delivery__bg-img--plat"></div>
     </section>
-
-
-
-
-
-
-
 
   </main>
 
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__logo" href="#">
+          <img src="images/footer-logo.png" alt="логотип">
+        </a>
+        <div class="footer__title">
+          Контакты
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__item wow animate__animated animate__fadeInDownBig">
+            <div class="footer__item-ico icon-phone"></div>
+            <div class="footer__item-title">Телефон</div>
+            <ul class="footer__item-list">
+              <li class="footer__item-itm">
+                <a class="footer__item-link" href="tel:+1234567890">+1 234 567 890</a>
+              </li>
+              <li class="footer__item-itm">
+                <a class="footer__item-link" href="tel:+1234567890">+1 234 567 890</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item wow animate__animated animate__fadeInDownBig">
+            <div class="footer__item-ico icon-map-marker"></div>
+            <div class="footer__item-title">Доставка</div>
+            <ul class="footer__item-list">
+              <li class="footer__item-itm">
+                Доставка по всему городу!
+              </li>
+              <li class="footer__item-itm">
+                Также скидка 10% на самовывоз
+              </li>
+              <li class="footer__item-itm">
+                <a class="footer__item-link" href="https://goo.gl/maps/kyPdGxeuhJrPjWPZ9" target="_blank">Киев, Бульвар
+                  Леси
+                  Украинки 139/б</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__item wow animate__animated animate__fadeInDownBig">
+            <div class="footer__item-ico icon-clock-o"></div>
+            <div class="footer__item-title">Приём Заказов</div>
+            <ul class="footer__item-list">
+              <li class="footer__item-itm">
+                Ежедневно с
+              </li>
+              <li class="footer__item-itm">
+                10:00 - 22:00
+              </li>
+            </ul>
+          </div>
 
+        </div>
+        <div class="footer__copi">
+
+          <a class="footer__mail" href="mailto:info@companyname.com">
+            info@companyname.com
+          </a>
+
+          <div class="footer__copi-text">
+            © Burger House 2020. Все правва защищены.
+          </div>
+
+          <ul class="footer__social">
+            <li class="footer__social-item">
+              <a class="footer__social-link icon-instagram" href="#"></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link icon-facebook" href="#"></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link icon-twitter" href="#"></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link icon-whatsapp" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <div id="modal1" style="display: none;" class="menu-popup">
@@ -434,6 +510,8 @@
       <div class="menu-popup__price">220 грн.</div>
     </div>
   </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
