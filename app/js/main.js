@@ -33,4 +33,19 @@ $(function () {
   wow.init();
 
 
+
+  if (window.matchMedia('(max-width: 991px)').matches) {
+    $('.burger').on('click', function () {
+      $('.burger').toggleClass('burger__active');
+
+      $('.header__list').slideToggle();
+    });
+
+    $('.header__link').on('click', function () {
+      $('.header__list').slideToggle();
+
+      $('.burger').toggleClass('burger__active');
+    });
+  }
+
 });

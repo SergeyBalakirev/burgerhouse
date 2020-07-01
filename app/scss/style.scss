@@ -21,7 +21,7 @@
     padding: 35px 0 35px;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
   }
   
   &__nav {
@@ -134,6 +134,8 @@
 
 // start stock 
 .stock {
+  position: relative;
+  overflow-x: hidden;
   &__inner {
     padding: 170px 0 0px;
     display: flex;
@@ -660,3 +662,8 @@
 
 
 // end footer 
+
+
+
+
+@import 'media';
